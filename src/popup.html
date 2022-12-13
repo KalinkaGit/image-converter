@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- METAs -->
+        <meta charset="UTF-8">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../static/css/global.css">
+        <link rel="stylesheet" href="../static/css/home.css">
+
+        <!-- JS -->
+        <script src="../static/js/libs/jquery.min.js"></script>
+        <script src="../static/js/libs/jquery.color.min.js"></script>
+        <script src="../static/js/converter.js"></script>
+        <script src="../static/js/load.js"></script>
+        <script src="../static/js/download.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Image Converter</h1>
+            </header>
+            <main>
+                <img id="img" src="" alt="Image Preview">
+                <div id="drop-area">
+                    <p>Drag & Drop your image here or click to select image</p>
+                </div>
+                <input hidden id="file" type="file" id="fileElem" accept="image/*">
+                <div id="convert-group">
+                    <select id="convert-format-select">
+                        <option value="webp">WebP</option>
+                        <option value="png">PNG</option>
+                        <option value="jpg">JPG</option>
+                        <option value="gif">GIF</option>
+                    </select>
+                    <a id="convert-btn">Convert</a>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

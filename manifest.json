@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Image Converter",
+    "description": "Converts images to different formats",
+    "author": "Kalinka",
+    "version": "1.0.0",
+
+    "icons": {
+        "16": "static/assets/icons/16.png",
+        "48": "static/assets/icons/48.png",
+        "128": "static/assets/icons/128.png"
+    },
+
+    "permissions": [
+        "downloads"
+    ],
+
+    "background": {
+        "service_worker": "src/background.js"
+    },
+
+    "action": {
+        "default_popup": "src/popup.html",
+        "default_icon": "static/assets/icons/128.png"
+    }
+}
